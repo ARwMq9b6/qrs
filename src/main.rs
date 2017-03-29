@@ -48,6 +48,7 @@ lazy_static! {
 fn main() {
     if let Err(e) = _main() {
         println!("Oops! {}", e);
+        std::process::exit(1)
     }
 }
 
