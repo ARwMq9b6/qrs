@@ -1,0 +1,21 @@
+[package]
+authors = ["ARwMq9b6"]
+name = "qrs"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.21.2"
+derive-error-chain = "0.10.0"
+error-chain = "0.10.0"
+futures = "0.1.11"
+get_if_addrs = "0.4.0"
+image = "0.12.3"
+lazy_static = "0.2.4"
+qrcode = "0.2.1"
+rocket = "0.2.3"
+rocket_codegen = "0.2.3"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["handlebars_templates"]
+version = "0.2.3"
