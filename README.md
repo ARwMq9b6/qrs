@@ -17,7 +17,7 @@ See [the releases page](https://github.com/ARwMq9b6/qrs/releases)
 [Install Rust toolchain](https://www.rust-lang.org/downloads.html) and then
 
 ```bash
-$ cargo install qrs
+$ cargo +nightly install qrs
 ```
 
 Quick Tour
