@@ -43,8 +43,6 @@ matrix:
       rust: nightly
     - env: TARGET=x86_64-unknown-freebsd DISABLE_TESTS=1
       rust: nightly
-    - env: TARGET=x86_64-unknown-netbsd DISABLE_TESTS=1
-      rust: nightly
 
     # Other architectures
     - env: TARGET=aarch64-unknown-linux-gnu
@@ -53,26 +51,9 @@ matrix:
       rust: nightly
     - env: TARGET=mips-unknown-linux-gnu
       rust: nightly
-    - env: TARGET=mips64-unknown-linux-gnuabi64
-      rust: nightly
-    - env: TARGET=mips64el-unknown-linux-gnuabi64
-      rust: nightly
     - env: TARGET=mipsel-unknown-linux-gnu
       rust: nightly
     - env: TARGET=powerpc-unknown-linux-gnu
-      rust: nightly
-    - env: TARGET=powerpc64-unknown-linux-gnu
-      rust: nightly
-    - env: TARGET=powerpc64le-unknown-linux-gnu
-      rust: nightly
-    - env: TARGET=s390x-unknown-linux-gnu DISABLE_TESTS=1
-      rust: nightly
-
-    # Testing other channels
-    - env: TARGET=x86_64-unknown-linux-gnu
-      rust: nightly
-    - env: TARGET=x86_64-apple-darwin
-      os: osx
       rust: nightly
 
 before_install: set -e
