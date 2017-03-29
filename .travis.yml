@@ -22,32 +22,51 @@ matrix:
   include:
     # Linux
     - env: TARGET=i686-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=i686-unknown-linux-musl
+      rust: nightly
     - env: TARGET=x86_64-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=x86_64-unknown-linux-musl
+      rust: nightly
 
     # OSX
     - env: TARGET=i686-apple-darwin
       os: osx
+      rust: nightly
     - env: TARGET=x86_64-apple-darwin
       os: osx
+      rust: nightly
 
     # *BSD
     - env: TARGET=i686-unknown-freebsd DISABLE_TESTS=1
+      rust: nightly
     - env: TARGET=x86_64-unknown-freebsd DISABLE_TESTS=1
+      rust: nightly
     - env: TARGET=x86_64-unknown-netbsd DISABLE_TESTS=1
+      rust: nightly
 
     # Other architectures
     - env: TARGET=aarch64-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=armv7-unknown-linux-gnueabihf
+      rust: nightly
     - env: TARGET=mips-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=mips64-unknown-linux-gnuabi64
+      rust: nightly
     - env: TARGET=mips64el-unknown-linux-gnuabi64
+      rust: nightly
     - env: TARGET=mipsel-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=powerpc-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=powerpc64-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=powerpc64le-unknown-linux-gnu
+      rust: nightly
     - env: TARGET=s390x-unknown-linux-gnu DISABLE_TESTS=1
+      rust: nightly
 
     # Testing other channels
     - env: TARGET=x86_64-unknown-linux-gnu
@@ -84,7 +103,6 @@ deploy:
     # In this example, there are some targets that are tested using the stable
     # and nightly channels. This condition makes sure there is only one release
     # for such targets and that's generated using the stable channel
-    condition: $TRAVIS_RUST_VERSION = nightly
     tags: true
   provider: releases
   skip_cleanup: true
