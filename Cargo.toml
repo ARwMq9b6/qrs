@@ -1,7 +1,13 @@
 [package]
-authors = ["ARwMq9b6"]
+authors = ["ARwMq9b6 <ARwMq9b6@users.noreply.github.com>"]
 name = "qrs"
 version = "0.1.0"
+description = "Share text/file via QR code"
+documentation = "https://docs.rs/crate/qrs"
+repository = "https://github.com/ARwMq9b6/qrs"
+readme = "./README.md"
+keywords = ["share", "qrcode", "sync", "cli"]
+license-file = "./LICENSE"
 
 [dependencies]
 clap = "2.21.2"
