@@ -1,7 +1,7 @@
 qrs
 ===
 
-[![Travis status](https://api.travis-ci.org/ARwMq9b6/qrs.svg?branch=master)](https://travis-ci.org/ARwMq9b6/qrs) [![Appveyor status](https://ci.appveyor.com/api/projects/status/pakhhlbpca7a475i/branch/master?svg=true)](https://ci.appveyor.com/project/ARwMq9b6/qrs)
+[![crates.io](https://img.shields.io/crates/v/qrs.svg)](https://crates.io/crates/qrs) | [![Travis status](https://api.travis-ci.org/ARwMq9b6/qrs.svg?branch=master)](https://travis-ci.org/ARwMq9b6/qrs) [![Appveyor status](https://ci.appveyor.com/api/projects/status/pakhhlbpca7a475i/branch/master?svg=true)](https://ci.appveyor.com/project/ARwMq9b6/qrs)
 
 Share text/file via QR code.
 
