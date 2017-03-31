@@ -1,13 +1,13 @@
 [package]
 authors = ["ARwMq9b6 <ARwMq9b6@users.noreply.github.com>"]
-name = "qrs"
-version = "0.1.0"
 description = "Share text/file via QR code"
 documentation = "https://docs.rs/crate/qrs"
-repository = "https://github.com/ARwMq9b6/qrs"
-readme = "./README.md"
 keywords = ["share", "qrcode", "sync", "cli"]
 license-file = "./LICENSE"
+name = "qrs"
+readme = "./README.md"
+repository = "https://github.com/ARwMq9b6/qrs"
+version = "0.1.1"
 
 [dependencies]
 clap = "2.21.2"
@@ -18,10 +18,11 @@ get_if_addrs = "0.4.0"
 image = "0.12.3"
 lazy_static = "0.2.4"
 qrcode = "0.2.1"
-rocket = "0.2.3"
-rocket_codegen = "0.2.3"
+rocket = "0.2.4"
+rocket_codegen = "0.2.4"
+term = "0.4.5"
 
 [dependencies.rocket_contrib]
 default-features = false
 features = ["handlebars_templates"]
-version = "0.2.3"
+version = "0.2.4"

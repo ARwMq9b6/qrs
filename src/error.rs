@@ -2,6 +2,7 @@
 
 use std;
 use qrcode;
+use term;
 
 #[derive(Debug, error_chain)]
 pub enum ErrorKind {
@@ -15,6 +16,9 @@ pub enum ErrorKind {
 
     #[error_chain(foreign)]
     ParseInt(std::num::ParseIntError),
+
+    #[error_chain(foreign)]
+    Term(term::Error),
 
     #[error_chain(foreign)]
     StrFromUtf8(std::string::FromUtf8Error),

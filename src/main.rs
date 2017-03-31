@@ -2,6 +2,7 @@
 #![plugin(rocket_codegen)]
 #![feature(custom_derive)]
 
+extern crate term;
 extern crate qrcode;
 extern crate image;
 extern crate clap;
