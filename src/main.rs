@@ -20,7 +20,7 @@ mod qrcode_local;
 
 use std::path::Path;
 use std::fs::File;
-use std::io::{Read, BufRead, Write, stdin, stdout};
+use std::io::{Read, BufRead, Write, stdin, stdout, stderr};
 use std::net::Ipv4Addr;
 use std::sync::Mutex;
 use std::collections::HashMap;
@@ -48,7 +48,7 @@ lazy_static! {
 
 fn main() {
     if let Err(e) = _main() {
-        println!("Oops! {}", e);
+        writeln!(stderr(), "Oops! {}", e);
         std::process::exit(1)
     }
 }
