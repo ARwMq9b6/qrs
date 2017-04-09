@@ -79,6 +79,7 @@ fn main() {
 fn _main() -> Result<()> {
     let matches = App::new("qrs")
         .about("Sharing via QR Code")
+        .version(env!("CARGO_PKG_VERSION"))
         .subcommand(SubCommand::with_name("send")
             .about("Send text or file(s)")
             .arg(Arg::with_name("type")
