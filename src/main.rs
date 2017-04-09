@@ -400,10 +400,11 @@ fn select_iface_ip_to_bind() -> Result<Ipv4Addr> {
 }
 
 fn terminal_dialog_quiz<T: AsRef<[u8]>>(print: T) -> Result<bool> {
+    let mut stdout = stdout();
     loop {
-        stdout().write_all(print.as_ref())?;
-        stdout().write_all(" [Y/n]".as_bytes())?;
-        stdout().flush()?;
+        stdout.write_all(print.as_ref())?;
+        stdout.write_all(" [Y/n]".as_bytes())?;
+        stdout.flush()?;
 
         let mut buf = String::with_capacity(2);
         stdin().read_line(&mut buf)?;
