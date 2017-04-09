@@ -63,9 +63,9 @@ impl<'a, P: BlankAndWhitePixel + 'static> RendererLocal<'a, P> {
 
     /// Walk the render,
     /// match
-    ///     on point => exec `on_fn`,
-    ///     off point => exec `off_fn`,
-    ///     ln => exec `ln_fn`,
+    ///     on point    => exec `on_fn`,
+    ///     off point   => exec `off_fn`,
+    ///     ln          => exec `ln_fn`
     pub fn walk<E, On, Off, Ln>(&self, on_fn: On, off_fn: Off, ln_fn: Ln) -> result::Result<(), E>
         where On: Fn() -> result::Result<(), E>,
               Off: Fn() -> result::Result<(), E>,
